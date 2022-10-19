@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "programming",
+=======
+  "name": "animal-nest",
+>>>>>>> 2c6c25720ff506989f73a33498c3588358d962e5
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
