@@ -16,14 +16,20 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_POSTS = gql`
-  query getPosts {
-    posts {
+query Posts {
+  posts {
+    _id
+    postText
+    postAuthor
+    createdAt
+    comments {
       _id
-      postText
-      postAuthor
+      commentText
+      commentAuthor
       createdAt
     }
   }
+}
 `;
 
 export const QUERY_SINGLE_POST = gql`
@@ -44,17 +50,23 @@ export const QUERY_SINGLE_POST = gql`
 `;
 
 export const QUERY_ME = gql`
-  query me {
-    me {
+query Me {
+  me {
+    _id
+    username
+    email
+    posts {
       _id
-      username
-      email
-      posts {
+      postText
+      postAuthor
+      createdAt
+      comments {
         _id
-        postText
-        postAuthor
+        commentText
+        commentAuthor
         createdAt
       }
     }
   }
+}
 `;
