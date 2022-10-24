@@ -1,0 +1,27 @@
+[
+    {
+      "username": "Danielle Harmon",
+      "email": "dharmon@pet.us",
+      "password": "password01"
+    },
+    {
+      "username": "Orville Todd",
+      "email": "otodd@pets.us",
+      "password": "password02"
+    },
+    {
+      "username": "Lowell Brown",
+      "email": "lb@pets.us",
+      "password": "password03"
+    },
+    {
+      "username": "Kathy Paul",
+      "email": "kpaul@pets.us",
+      "password": "password04"
+    },
+    {
+      "username": "Ramon Potter",
+      "email": "rpotter@pets.us",
+      "password": "password05"
+    }
+  ]
