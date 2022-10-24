@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 require("dotenv").config()
+console.log(process.env.MONGODB_URI)
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb+srv://root:Password1234@cluster0.7oi1h5z.mongodb.net/project3_db?retryWrites=true&w=majority'
+    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/project3',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

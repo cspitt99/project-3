@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import { useMutation, useQuery } from '@apollo/client';
 
 import { ADD_POST } from '../../utils/mutations';
 import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
@@ -26,11 +26,11 @@ const PostForm = () => {
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, posts: [...me.posts, addPost] } },
-      });
+      // const { me } = cache.readQuery({ query: QUERY_POSTS });
+      // cache.writeQuery({
+      //   query: QUERY_ME,
+      //   data: { me: { posts: [...me.posts, addPost] } },
+      // });
     },
   });
 
