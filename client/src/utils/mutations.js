@@ -33,7 +33,7 @@ mutation AddPost($postText: String!) {
 `;
 
 export const ADD_COMMENT = gql`
-  mutation addComment($opstId: ID!, $commentText: String!) {
+  mutation addComment($postId: ID!, $commentText: String!) {
     addComment(postId: $postId, commentText: $commentText) {
       _id
       postText
