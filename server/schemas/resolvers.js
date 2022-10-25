@@ -67,7 +67,7 @@ const resolvers = {
     },
     addComment: async (parent, { postId, commentText }, context) => {
       if (context.user) {
-        return post.findOneAndUpdate(
+        return Post.findOneAndUpdate(
           { _id: postId },
           {
             $addToSet: {
